@@ -83,7 +83,7 @@ for a particular purpose.
 
 6. Result  
 拡大したもの  
-<img src="/assets/img/README/figure2.png" alt="Figure 2" width=75% height=75%>
+<img src="/assets/img/README/figure2.PNG" alt="Figure 2" width=75% height=75%>
 
 #### 参考文献
 [1] https://qiita.com/noppefoxwolf/items/335323b98f0400a6f07d  
