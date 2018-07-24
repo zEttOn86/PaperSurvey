@@ -21,7 +21,7 @@ Loss, Regularization and Normalization, architecturesの3つ観点からGAN Land
 
 落とし穴，再現性の問題，実践的な考慮事項を議論．
 
-<p class="new-page"></p>
+\clearpage
 
 ## <font color="MediumSpringGreen"> 3. 技術や手法の"キモ"はどこにある？ </font>
 
@@ -66,7 +66,7 @@ $$
 {\cal L}_G=- \mathbb{E}_{\hat{x} \sim Q} [(D(\hat{x})-1)^2]
 $$
 
-<p class="new-page"></p>
+\clearpage
 
 ### <font color="LightGreen"> 3.2 Regularization and Normalization of the Discriminator </font>
 
@@ -96,7 +96,7 @@ $$
 
     - 注意：この手法は，線形レイヤーとReLU活性化の1-Lipschitznessが保証する．しかし，畳み込みマップのカーネルのスペクトルノルムを1に制限することは，畳み込み写像のスペクトルノルムを1に制限することではない．実際，使用されるstrideとpaddingに依存する．
 
-<p class="new-page"></p>
+\clearpage
 
 ### <font color="LightGreen"> 3.3 Generator and Discriminator Architecture </font>
 
