@@ -85,6 +85,14 @@ for a particular purpose.
 拡大したもの  
 <img src="/assets/img/README/figure2.PNG" alt="Figure 2" width=75% height=75%>
 
+ **追記**  
+batファイルで動くように，手引きの5番を少し変更した．
+1. 同様
+2. `headers`フォルダにh-luatexja.texを作成
+3. batファイル(`markdown2pdf.bat`)を実行  
+batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し，`pdf`フォルダ内に同じファイル名でpdfを出力する．
+
+
 #### 参考文献
 [1] https://qiita.com/noppefoxwolf/items/335323b98f0400a6f07d  
 [2] http://cartman0.hatenablog.com/entry/2016/03/22/023632  
