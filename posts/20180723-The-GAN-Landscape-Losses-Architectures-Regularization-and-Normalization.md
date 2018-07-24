@@ -2,6 +2,7 @@
 layout: post
 title:  The GAN Landscape: Losses, Architectures, Regularization, and Normalization
 date:   2018-07-23
+output: pdf_document
 ---
 <!--
 https://github.com/shunk031/paper-survey
@@ -47,7 +48,9 @@ $$
 {\cal L}_G=- \mathbb{E}_{\hat{x} \sim Q} [(D(\hat{x})-1)^2]
 $$
 
-### 
+### Regularization and Normalization of the Discriminator
+-
+
 <!---
 ![Figure 1](../assets/img/(title)/figure1.png)
 -->
