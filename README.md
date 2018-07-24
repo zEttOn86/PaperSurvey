@@ -68,7 +68,7 @@ for a particular purpose.
     $$
     ```
 
-    2. 日本語を PDF 変換するため、h-luatexja.tex というファイルを同フォルダに用意
+    2. 日本語を PDF 変換するため、`h-luatexja.tex` というファイルを同フォルダに用意
     ```
     \usepackage{luatexja}
     \hypersetup{unicode=true}
@@ -98,4 +98,6 @@ batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し�
 [2] http://cartman0.hatenablog.com/entry/2016/03/22/023632  
 [3] https://qiita.com/tsujimitsu/items/907d7a2fae2057d0fb1f  
 [4] https://qiita.com/saitotak/items/c5630267c06b2ad0dccd  
-[5] https://sky-y.github.io/osc-kyoto2017-pandoc/
+[5] https://sky-y.github.io/osc-kyoto2017-pandoc/  
+[6] https://qiita.com/takada-at/items/c807c163bd861bbec7cf  
+[7] https://orumin.blogspot.com/2017/09/pandoc-markdown-pdf.html

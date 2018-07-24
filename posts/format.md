@@ -5,24 +5,24 @@
 https://github.com/shunk031/paper-survey
 -->
 
-## 1. どんなもの？
+## <font color="MediumSpringGreen"> 1. どんなもの？ </font>
 
-## 2. 先行研究と比べてどこがすごいの？
+## <font color="MediumSpringGreen"> 2. 先行研究と比べてどこがすごいの？ </font>
 
-## 3. 技術や手法の"キモ"はどこにある？
+## <font color="MediumSpringGreen"> 3. 技術や手法の"キモ"はどこにある？ </font>
 
 ![Figure 1](../assets/img/format/figure1.png)
 <!---
 ![Figure 1](../assets/img/(title)/figure1.png)
 -->
 
-## 4. どうやって有効だと検証した？
+## <font color="SpringGreen"> 4. どうやって有効だと検証した？ </font>
 
-## 5. 議論はあるか？
+## <font color="SpringGreen"> 5. 議論はあるか？ </font>
 
-## 6. 次に読むべき論文はあるか？
+## <font color="SpringGreen"> 6. 次に読むべき論文はあるか？ </font>
 
-### 論文情報・リンク
+### <font color="SpringGreen"> 論文情報・リンク </font>
 
 - [著者，"タイトル，" ジャーナル名，voluem，no.，ページ，年](論文リンク)
 
