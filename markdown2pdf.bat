@@ -10,7 +10,9 @@ SET OUTPUT_DIR=%ROOT%pdf\
 :: https://code.i-harness.com/ja/q/17c5b
 FOR /F "delims=|" %%I IN ('DIR "%INPUT_DIR%*.md" /B /O:D') DO SET NewestFile=%%I
 
+PUSHD %INPUT_DIR%
 CALL :SUB %NewestFile%
+POPD
 
 PAUSE
 EXIT
@@ -18,7 +20,7 @@ EXIT
 
 :::::::::: RUN ::::::::::
 :SUB
-ECHO Start to generate pdf
+ECHO Start to generate " %~n1.pdf "
 CALL pandoc %INPUT_DIR%%~1 -o %OUTPUT_DIR%%~n1.pdf --pdf-engine=lualatex -H %HEADER%
 ECHO Done
 EXIT /B

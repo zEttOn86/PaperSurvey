@@ -1,8 +1,6 @@
----
-layout: post
-title:  "論文タイトル"
-date:   YYYY-MM-DD
----
+
+@title:  "論文タイトル"  
+@date:   YYYY-MM-DD
 <!--
 https://github.com/shunk031/paper-survey
 -->
@@ -30,6 +28,8 @@ https://github.com/shunk031/paper-survey
 
 
 ### Markdown記法のMEMO
-Markdownで画像を相対パスで指定する：
-- https://step-learn.com/markdown/20141011-img-relative.html
-- http://stakiran.hatenablog.com/entry/2018/04/23/190204
+Markdownで画像を相対パスで指定する
+
+- [Refference 1](https://step-learn.com/markdown/20141011-img-relative.html)
+
+- [Refference 2](http://stakiran.hatenablog.com/entry/2018/04/23/190204)
