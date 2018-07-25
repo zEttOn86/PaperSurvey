@@ -1,0 +1,13 @@
+body {
+  padding: 10px 10%;
+  font-family: 'Noto Sans Japanese', "Hiragino Kaku Gothic Pro", meiryo, "Open Sans", sans-serif;
+}
+table {
+  width: 100% !important;
+}
+col:first-child {
+  width: 2%;
+}
+img {
+  max-width: 100%;
+}
