@@ -85,12 +85,61 @@ for a particular purpose.
 拡大したもの  
 <img src="/assets/img/README/figure2.PNG" alt="Figure 2" width=75% height=75%>
 
- **追記**  
+ **追記1**  
 batファイルで動くように，手引きの5番を少し変更した．
 1. 同様
 2. `headers`フォルダにh-luatexja.texを作成
 3. batファイル(`markdown2pdf.bat`)を実行  
 batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し，`pdf`フォルダ内に同じファイル名でpdfを出力する．
+
+ **追記2**  
+ `h-luatexja.tex`を変更．画像のサイズを変更をできるようにし，出力pdfのマージンを決定．
+ ```
+ \makeatletter
+ \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+ \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+ \makeatother
+ % Scale images if necessary, so that they will not overflow the page
+ % margins by default, and it is still possible to overwrite the defaults
+ % using explicit options in \includegraphics[width, height, ...]{}
+ \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+ \usepackage{luatexja-otf}
+ \hypersetup{unicode=true}
+ \usepackage{geometry}
+ % http://joker.hatenablog.com/entry/2012/07/09/153537
+ % ######## measure #########
+ % # mm = 1mm = 2.85pt      #
+ % # cm = 10mm = 28.5pt     #
+ % # in = 25.4mm = 72.27pt  #
+ % # pt = 0.35mm = 1pt      #
+ % # em = width of [M]      #
+ % # ex = height of [x]     #
+ % # zw = width of [Kanji]  #
+ % # zh = height of [Kanji] #
+ % ##########################
+ % ##################### Portrait Setting #########################
+ % # TOP = 1inch + ¥voffset + ¥topmargin + ¥headheight + ¥headsep #
+ % #     = 1inch + 0pt + 4pt + 20pt + 18pt (default)              #
+ % # BOTTOM = ¥paperheight - TOP -¥textheight                     #
+ % ################################################################
+ \setlength{\textheight}{\paperheight}   % 紙面縦幅を本文領域にする（BOTTOM=-TOP）
+ \setlength{\topmargin}{4.6truemm}       % 上の余白を30mm（=1inch+4.6mm）に
+ \addtolength{\topmargin}{-\headheight}  %
+ \addtolength{\topmargin}{-\headsep}     % ヘッダの分だけ本文領域を移動させる
+ \addtolength{\textheight}{-60truemm}    % 下の余白も30mm（BOTTOM=-TOPだから+TOP+30mm)
+
+ % #################### Landscape Setting #######################
+ % # LEFT = 1inch + ¥hoffset + ¥oddsidemargin (¥evensidemargin) #
+ % #      = 1inch + 0pt + 0pt                                   #
+ % # RIGHT = ¥paperwidth - LEFT - ¥textwidth                    #
+ % ##############################################################
+ \setlength{\textwidth}{\paperwidth}     % 紙面横幅を本文領域にする（RIGHT=-LEFT）
+ \setlength{\oddsidemargin}{-0.4truemm}  % 左の余白を25mm(=1inch-0.4mm)に
+ \setlength{\evensidemargin}{-0.4truemm} %
+ \addtolength{\textwidth}{-50truemm}     % 右の余白も25mm（RIGHT=-LEFT）
+
+ ```
 
 
 #### 参考文献
