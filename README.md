@@ -140,6 +140,22 @@ batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し�
  \addtolength{\textwidth}{-50truemm}     % 右の余白も25mm（RIGHT=-LEFT）
 
  ```
+### 手引きの変更(20180725)
+今までは`pandoc`を使って，`latex` $\rightarrow$ `pdf`に変換していたが，出力pdfが思っていたのと違ったたのと変換が遅いので，以下のように変更する．
+
+新： `markdown` $\overset{pandoc}{\longrightarrow}$ `html`  $\overset{Google  Chrome}{\longrightarrow}$ `pdf`  
+
+旧： `markdown` $\overset{pandoc}{\longrightarrow}$ `pdf`
+
+必要なものは以下の通り．
+
+- pandoc
+  - html変換用
+
+- Google chrome
+  - pdfの変換用
+
+これに伴いbatファイルも変更した．出力は，`html`フォルダと`pdf`フォルダにできる．参考文献は，[8-11]が役にたった．
 
 
 #### 参考文献
@@ -149,4 +165,8 @@ batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し�
 [4] https://qiita.com/saitotak/items/c5630267c06b2ad0dccd  
 [5] https://sky-y.github.io/osc-kyoto2017-pandoc/  
 [6] https://qiita.com/takada-at/items/c807c163bd861bbec7cf  
-[7] https://orumin.blogspot.com/2017/09/pandoc-markdown-pdf.html
+[7] https://orumin.blogspot.com/2017/09/pandoc-markdown-pdf.html  
+[8] http://jinjor-labo.hatenablog.com/entry/2016/02/04/154126  
+[9] http://takuya-1st.hatenablog.jp/entry/2017/06/16/133000  
+[10] http://sky-y.github.io/site-pandoc-jp/users-guide/  
+[11] https://qiita.com/yohm/items/f14f03ccee918d4d7213
