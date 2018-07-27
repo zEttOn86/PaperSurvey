@@ -1,7 +1,7 @@
-
-@title:  The GAN Landscape: Losses, Architectures, Regularization, and Normalization
-
-@date:   2018-07-23
+---
+title:  The GAN Landscape: Losses, Architectures, Regularization, and Normalization
+date:   2018-07-23
+---
 
 <!--
 https://github.com/shunk031/paper-survey
@@ -20,8 +20,6 @@ GAN Landscapeを深く調査するだけでなく，現状のSOTAを再現した
 Loss, Regularization and Normalization, architecturesの3つ観点からGAN Landscapeを調査.  
 
 落とし穴，再現性の問題，実践的な考慮事項を議論．
-
-\clearpage
 
 ## <font color="MediumSpringGreen"> 3. 技術や手法の"キモ"はどこにある？ </font>
 
@@ -66,8 +64,6 @@ $$
 {\cal L}_G=- \mathbb{E}_{\hat{x} \sim Q} [(D(\hat{x})-1)^2]
 $$
 
-\clearpage
-
 ### <font color="LightGreen"> 3.2 Regularization and Normalization of the Discriminator </font>
 
 - Gradient norm penalty
@@ -96,8 +92,6 @@ $$
 
     - 注意：この手法は，線形レイヤーとReLU活性化の1-Lipschitznessが保証する．しかし，畳み込みマップのカーネルのスペクトルノルムを1に制限することは，畳み込み写像のスペクトルノルムを1に制限することではない．実際，使用されるstrideとpaddingに依存する．
 
-\clearpage
-
 ### <font color="LightGreen"> 3.3 Generator and Discriminator Architecture </font>
 
 - DCGANとResNetの構造を考える．これらの構造は，どこにでもいるため．128 $\times$ 128の画像で考える．
@@ -110,7 +104,6 @@ $$
 
 ![Figure2](../assets/img/20180723-The-GAN-Landscape-Losses-Architectures-Regularization-and-Normalization/figure2.png)
 
-\clearpage
 
 ### <font color="LightGreen"> 3.4 Evaluation Metrics </font>
 
@@ -142,7 +135,6 @@ $$
 
   - 欠点として，クラスに対応する生成されたサンプルを知らないという点がある．だから，1つのクラスデータセットに一般的に適用される
 
-\clearpage
 
 ## <font color="SpringGreen"> 4. どうやって有効だと検証した？ </font>
 
@@ -154,7 +146,6 @@ $$
 
 ![Figure4](../assets/img/20180723-The-GAN-Landscape-Losses-Architectures-Regularization-and-Normalization/figure4.png)
 
-\clearpage
 
 - Spectral normalizationとGradient penaltyの組み合わせ　結果
 
@@ -172,7 +163,6 @@ $$
 
 - ResNet styleアーキテクチャに適用された多くのトリックは，品質においてわずかな変化をもたらす．高い計算コストによって，避けるべきである．
 
-\clearpage
 
 ## <font color="SpringGreen"> 5. 議論はあるか？ </font>
 

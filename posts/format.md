@@ -1,6 +1,9 @@
 
-@title:  "論文タイトル"  
-@date:   YYYY-MM-DD
+---
+title:  "論文タイトル"  
+date:   YYYY-MM-DD
+---
+
 <!--
 https://github.com/shunk031/paper-survey
 -->
