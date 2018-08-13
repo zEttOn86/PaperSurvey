@@ -141,11 +141,11 @@ batファイルでは，`posts`フォルダ内の最新のmarkdownを取得し�
 
  ```
 ### 手引きの変更(20180725)
-今までは`pandoc`を使って，`latex` $\rightarrow$ `pdf`に変換していたが，出力pdfが思っていたのと違ったたのと変換が遅いので，以下のように変更する．
+今までは`pandoc`を使って，`latex` ➡ `pdf`に変換していたが，出力pdfが思っていたのと違ったたのと変換が遅いので，以下のように変更する．
 
-新： `markdown` $\overset{pandoc}{\longrightarrow}$ `html`  $\overset{Google  Chrome}{\longrightarrow}$ `pdf`  
+新： `markdown` ➡(pandoc) `html`  ➡(Google Chorome) `pdf`  
 
-旧： `markdown` $\overset{pandoc}{\longrightarrow}$ `pdf`
+旧： `markdown` ➡(pandoc) `pdf`
 
 必要なものは以下の通り．
 
